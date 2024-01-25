@@ -39,6 +39,7 @@ body {
 
     .special-heading + p {
         margin-top: -20px;
+        font-size: 15px;
     }
 }
 
@@ -194,7 +195,7 @@ header .links ul li:not(:last-child) a {
 
 .features .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 20px;
 }
 
@@ -222,7 +223,8 @@ header .links ul li:not(:last-child) a {
 @media (max-width: 360px) {
     .features .container {
         justify-content: center;
-    }
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
 }
 
 .services {
@@ -232,7 +234,7 @@ header .links ul li:not(:last-child) a {
 
 .services .services-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 30px;
     margin-top: 100px;
 }
@@ -316,7 +318,7 @@ header .links ul li:not(:last-child) a {
 
 .portfolio .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 30px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -349,6 +351,13 @@ header .links ul li:not(:last-child) a {
     position: relative;
 }
 
+@media (max-width: 360px) {
+    .portfolio .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
 button {
     list-style: none;
     padding: 15px;
@@ -367,7 +376,7 @@ button {
 
 .about .about-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -431,6 +440,7 @@ button {
     }
     .about .about-content {
         text-align: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     .about .about-content .col {
